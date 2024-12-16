@@ -3,49 +3,63 @@
 /*******************************************************************/
 body {
   font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
+  background-color: #9e7967; /* Fond de page en beige olive */
   margin: 0;
   padding: 0;
 }
 
+/*******************************************************************/
+/****************************** HEADER *****************************/
+/*******************************************************************/
 header {
-  background-color: #3b2a45;
-  color: white;
-  padding: 20px;
+  background-color: #eeeeee; /* Gris clair pour le fond */
+  color: #3b2a45; /* Texte foncé pour le contraste */
+  padding: 10px 20px; /* Réduire la hauteur du header */
   text-align: center;
-  position: relative; /* Peut rester "relative" pour être au-dessus */
-  z-index: 2; /* Toujours au-dessus du contenu */
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile sous le header */
+  border-bottom: 3px solid #59372b; /* Bordure en bas du header en marron foncé */
 }
 
+/*******************************************************************/
+/****************************** FOOTER *****************************/
+/*******************************************************************/
 footer {
-  background-color: #3b2a45;
-  color: white;
+  background-color: #cca98d; /* Beige clair pour le footer */
+  color: white; /* Texte blanc pour ressortir */
   text-align: center;
   padding: 10px;
   position: relative;
-  z-index: 2; /* Toujours au-dessus du contenu */
+  z-index: 2;
 }
 
 /*******************************************************************/
 /****************************** WRAPPER ****************************/
 /*******************************************************************/
-/* Conteneur principal ("feuille") */
 .content-wrapper {
-  width: 100%; /* Le wrapper prend toute la largeur disponible */
+  width: 100%;
   max-width: calc(100% - 400px); /* Réduire la largeur de 10px de chaque côté */
-  margin: 0 auto; /* Centrage horizontal */
+  margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: rgba(
+    247,
+    231,
+    206,
+    0.9
+  ); /* Fond en beige clair très doux */
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   position: relative;
-  z-index: 1; /* Le contenu sera sous le header et le footer */
+  z-index: 1;
   min-height: calc(
     100vh - 160px
-  ); /* 100vh (hauteur de la fenêtre) moins la hauteur du header et du footer */
+  ); /* Hauteur totale moins la hauteur du header et footer */
 }
 
-/* Projets */
+/*******************************************************************/
+/****************************** PROJECTS ***************************/
+/*******************************************************************/
 #projects {
   display: flex;
   justify-content: center;
@@ -65,7 +79,7 @@ footer {
 .project-card {
   width: 200px;
   height: 200px;
-  background-color: #fff;
+  background-color: #ffffff; /* Blanc pour les cartes de projet */
   border-radius: 15px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -85,7 +99,7 @@ footer {
 .project-card h3 {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #3b2a45;
+  color: #3b2a45; /* Texte foncé pour les titres */
   margin-bottom: 10px;
 }
 
@@ -95,17 +109,17 @@ footer {
 }
 
 #3d {
-  background-color: #d1b3ff;
+  background-color: #d1b3ff; /* Lilas pâle pour le projet 3D */
 }
 
 #game {
-  background-color: #ffb3b3;
+  background-color: #ffb3b3; /* Rose pâle pour le projet jeux vidéo */
 }
 
 #drawing {
-  background-color: #b3e0ff;
+  background-color: #b3e0ff; /* Bleu pâle pour le dessin */
 }
 
 #apps {
-  background-color: #c2f0c2;
+  background-color: #c2f0c2; /* Vert pâle pour les applications */
 }
