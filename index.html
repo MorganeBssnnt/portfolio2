@@ -3,11 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Accueil</title>
+    <title>Portfolio - Redirection</title>
+    <meta http-equiv="refresh" content="3; url=/templates/index.html" />
+    <!-- Redirection après 3 secondes -->
+    <style>
+      /* Style du body */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f7e7ce; /* Couleur de fond douce */
+        font-family: Arial, sans-serif;
+      }
+
+      /* Style du spinner */
+      .spinner {
+        border: 8px solid #f3f3f3; /* Couleur de l'arrière-plan du spinner */
+        border-top: 8px solid #59372b; /* Couleur de l'arc du spinner */
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 2s linear infinite;
+      }
+
+      /* Animation du spinner */
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Style du texte */
+      .loading-text {
+        font-size: 1.2rem;
+        color: #59372b;
+        margin-top: 10px;
+      }
+    </style>
   </head>
   <body>
-    <footer>
-      <p>© 2024 Morgane Buissonnet</p>
-    </footer>
+    <div class="spinner"></div>
+    <div class="loading-text">
+      Chargement... Redirection vers la page d'accueil
+    </div>
   </body>
 </html>
