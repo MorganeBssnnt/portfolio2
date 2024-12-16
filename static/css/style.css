@@ -1,0 +1,111 @@
+/*******************************************************************/
+/****************************** BODY *******************************/
+/*******************************************************************/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #3b2a45;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative; /* Peut rester "relative" pour être au-dessus */
+  z-index: 2; /* Toujours au-dessus du contenu */
+}
+
+footer {
+  background-color: #3b2a45;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  z-index: 2; /* Toujours au-dessus du contenu */
+}
+
+/*******************************************************************/
+/****************************** WRAPPER ****************************/
+/*******************************************************************/
+/* Conteneur principal ("feuille") */
+.content-wrapper {
+  width: 100%; /* Le wrapper prend toute la largeur disponible */
+  max-width: calc(100% - 400px); /* Réduire la largeur de 10px de chaque côté */
+  margin: 0 auto; /* Centrage horizontal */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1; /* Le contenu sera sous le header et le footer */
+  min-height: calc(
+    100vh - 160px
+  ); /* 100vh (hauteur de la fenêtre) moins la hauteur du header et du footer */
+}
+
+/* Projets */
+#projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+}
+
+.project-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  perspective: 1000px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) rotateY(15deg) rotateX(10deg);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3b2a45;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+#3d {
+  background-color: #d1b3ff;
+}
+
+#game {
+  background-color: #ffb3b3;
+}
+
+#drawing {
+  background-color: #b3e0ff;
+}
+
+#apps {
+  background-color: #c2f0c2;
+}

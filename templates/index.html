@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Accueil</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <!-- Fond des bulles -->
+    <div class="bubble-background"></div>
+
+    <header>
+      <h1>Bienvenue sur mon Portfolio</h1>
+    </header>
+
+    <!-- Conteneur principal (la "feuille") -->
+    <div class="content-wrapper">
+      <section id="projects">
+        <h2>Mes Projets</h2>
+        <div class="project-container">
+          <div class="project-card" id="3d">
+            <h3>3D</h3>
+            <p>Modélisation 3D, animation et rendu</p>
+          </div>
+          <div class="project-card" id="game">
+            <h3>Jeux vidéo</h3>
+            <p>Création de jeux vidéo</p>
+          </div>
+          <div class="project-card" id="drawing">
+            <h3>Dessin</h3>
+            <p>Illustration et art numérique</p>
+          </div>
+          <div class="project-card" id="apps">
+            <h3>Applications</h3>
+            <p>Développement d'applications</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>© 2024 Mon Portfolio</p>
+    </footer>
+  </body>
+</html>
