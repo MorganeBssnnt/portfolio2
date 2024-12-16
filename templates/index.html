@@ -10,19 +10,32 @@
     />
   </head>
   <body>
-    <!-- Fond des bulles -->
-    <div class="bubble-background"></div>
+    <!-- Barre d'annonce défilante avec slider -->
+    <div class="announcement-bar">
+      <div class="announcement-bar__slider">
+        <p>Recherche alternance Développeuse Web pour 1 an</p>
+      </div>
+    </div>
 
+    <!-- Header -->
     <header>
-      <h1>Bienvenue sur mon Portfolio</h1>
+      <h2>Portfolio</h2>
     </header>
 
     <!-- Conteneur principal (la "feuille") -->
     <div class="content-wrapper">
+      <!-- Logo sous le header -->
+      <div class="logo-container">
+        <img
+          src="{{ url_for('static', filename='images/portfolio_logo.png') }}"
+          alt="Portfolio Logo"
+          class="portfolio-logo"
+        />
+      </div>
       <section id="projects">
         <h2>Mes Projets</h2>
         <div class="project-container">
-          <div class="project-card" id="3d">
+          <div class="project-card" id="threeD">
             <h3>3D</h3>
             <p>Modélisation 3D, animation et rendu</p>
           </div>

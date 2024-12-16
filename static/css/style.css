@@ -9,17 +9,62 @@ body {
 }
 
 /*******************************************************************/
+/****************************** ANNOUNCEMENT BAR *******************/
+/*******************************************************************/
+.announcement-bar {
+  background-color: #59372b; /* Couleur marron foncé */
+  color: white;
+  text-align: center;
+  padding: 0; /* Retirer le padding vertical pour avoir une hauteur de 30px */
+  height: 30px; /* Fixer la hauteur à 30px */
+  font-size: 0.9rem; /* Ajuster la taille de la police pour l'adapter à la hauteur */
+  font-weight: bold;
+  line-height: 30px; /* Centrer verticalement le texte */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre discrète sous la barre */
+}
+
+.announcement-bar p {
+  margin: 0;
+  line-height: 30px; /* Ajuster l'espacement pour centrer le texte verticalement */
+}
+
+/*******************************************************************/
 /****************************** HEADER *****************************/
 /*******************************************************************/
 header {
   background-color: #eeeeee; /* Gris clair pour le fond */
   color: #3b2a45; /* Texte foncé pour le contraste */
-  padding: 10px 20px; /* Réduire la hauteur du header */
+  padding: 0 20px; /* Enlever le padding vertical pour contrôler la hauteur */
+  height: 3.3125rem; /* Fixer la hauteur du header */
   text-align: center;
   position: relative;
   z-index: 2;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile sous le header */
   border-bottom: 3px solid #59372b; /* Bordure en bas du header en marron foncé */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px; /* Ajouter un espace de 30px au-dessus du header pour le déplacer sous l'announcement bar */
+}
+
+/* Conteneur du logo */
+.logo-container {
+  display: flex;
+  justify-content: center; /* Centrer horizontalement */
+  margin-top: 20px; /* Ajouter un peu d'espace au-dessus */
+  padding: 10px;
+}
+
+/* Image du logo */
+.portfolio-logo {
+  max-width: 500px; /* Limiter la taille du logo à une largeur maximale */
+  height: auto; /* Garder la proportion du logo */
+  display: block; /* Retirer les espaces autour de l'image */
 }
 
 /*******************************************************************/
@@ -77,8 +122,8 @@ footer {
 }
 
 .project-card {
-  width: 200px;
-  height: 200px;
+  width: 264.25px;
+  height: 264.25px;
   background-color: #ffffff; /* Blanc pour les cartes de projet */
   border-radius: 15px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
@@ -108,18 +153,18 @@ footer {
   color: #555;
 }
 
-#3d {
-  background-color: #d1b3ff; /* Lilas pâle pour le projet 3D */
+#threeD {
+  background-color: #f7e7ce; /* Lilas pâle pour le projet 3D */
 }
 
 #game {
-  background-color: #ffb3b3; /* Rose pâle pour le projet jeux vidéo */
+  background-color: #cca98d; /* Rose pâle pour le projet jeux vidéo */
 }
 
 #drawing {
-  background-color: #b3e0ff; /* Bleu pâle pour le dessin */
+  background-color: #9e7967; /* Bleu pâle pour le dessin */
 }
 
 #apps {
-  background-color: #c2f0c2; /* Vert pâle pour les applications */
+  background-color: #59372b; /* Vert pâle pour les applications */
 }
